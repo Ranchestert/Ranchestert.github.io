@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" lang="en">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script
+            src="https://code.jquery.com/jquery-3.6.3.js"
+            integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM="
+            crossorigin="anonymous">
+        </script>
+        <title>test1</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300&family=Nunito&family=Rubik+Bubbles&display=swap" rel="stylesheet">
+    </head>
+    <div class="maindiv">
+        <div class="mainPageContent">
+            <h1 class="mainH1">Welcome!</h1>
+        </div>
+        <div class="menu">
+            <button class="menubtn"><img src="pics/Group 1.png" class="menulogo"></button>
+            <div class="menuReckt">
+
+            </div>
+            <div class="menuContent">
+                <p class="menuContentP1">Home</p>
+                <br>
+                <p class="menuContentP2">Smth</p>
+                <br>
+                <p class="menuContentP3">Smth more</p>
+            </div>
+        </div>
+        <div class="mainPageContent">
+            <p class="mainP1">
+                The quick brown fox jumps over a lazy dog, causing a ripple of excitement in the quaint village. Mr. Jock, TV quiz PhD, carefully examined the perplexing glyphs carved on an ancient, mysterious box. In a vibrant meadow, five playful zebras galloped, their sleek black and white stripes creating a captivating spectacle. Vexed nymphs, with their ethereal glow, performed a whimsical dance beneath the moonlit sky. <br>
+
+                Meanwhile, a group of quirky wizards gathered to discuss the logistics of a grandiose magical tournament. Bright vixens, adorned with jewels, joined the festivities, adding a touch of glamour to the mystical affair. The air resonated with the harmonious melody of a jazz ensemble, playing quizzical xylophone chords and joyful banjo tunes. <br>
+                
+                Zephyrs gently wafted through the jungle of exotic ferns, carrying the sweet scent of blooming flowers. A quirky, mad wizard, known for his peculiar incantations, decided to jump over a series of perplexing obstacles, testing the limits of his magical prowess. Jackdaws cawed in approval, perched on the branches of a gnarled oak tree. <br>
+                
+                As the sun dipped below the horizon, casting hues of orange and pink across the landscape, a squadron of five or six big jet planes zoomed quickly by the tower, leaving trails of white vapor in their wake. The wizard, undeterred by the commotion, continued his acrobatic display, much to the amusement of the onlookers. <br>
+                
+                Just as the night settled in, the village came alive with the buzzing of bees, vexing quirky farmer Jim, who was attempting to harvest his bumper crop of juicy peaches. Undeterred, he packed his box with five dozen liquor jugs, determined to make the most of the moonlit night. <br>
+                
+                In the distance, quick brown dogs could be seen jumping over the lazy fox, adding a touch of whimsy to the nocturnal scene. Gym buffs, drawn by the commotion, flocked to the quaint jazz exercise class, eager to join the lively festivities. The night unfolded with a series of enchanting events, as the villagers reveled in the magical atmosphere that enveloped their charming community.
+            </p>
+        </div>
+        <div class="contactArea">
+            <p class="mish1cont">Contact us:</p>
+            <p>Phone number: <span class="phoneNum">+7XXXXXXXXXX</span> &nbsp; Email: <span class="email">XXXXXXX@XXX.XX</span></p>
+        </div>
+    </div>
+    <script>
+        $(document).ready(function(){
+            $(".menuReckt").hide();
+            $(".menuContent").hide();
+            $(".menubtn").click(function(){
+                if($(".menuReckt").is(":hidden"))
+                {
+                    $(".menuReckt").show();
+                    $(".menuContent").show();
+                }else{
+                    $(".menuReckt").hide();
+                    $(".menuContent").hide();
+                    $(".mainP1").css("margin-top", "0");
+                };
+            });
+        });
+    </script>
+</html>

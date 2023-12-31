@@ -1,0 +1,72 @@
+.menulogo{
+    height: 30px;
+    user-select: none;
+}
+.menuReckt{
+    margin-top: 10px;
+    height: 200px;
+    width: 120px;
+    margin-left: 91%;
+    z-index: 0;
+    background-color: rgba(33, 95, 255, 1);
+    border: 2px;
+    border-color: rgb(107, 132, 195);
+    border-radius: 12px;
+    position: absolute;
+}
+body{
+    background-color: white;
+}
+.menuContent{
+    padding: auto;
+}
+.menubtn{
+    border: none;
+    background-color: white;
+    margin-left: 95%;
+    margin-top: -50px;
+}
+.menuContentP1,.menuContentP2,.menuContentP3{
+    padding: auto;
+    z-index: 1;
+    cursor: pointer;
+    color: white;
+    display: block;
+    position: absolute;
+}
+.menuContentP1,.menuContentP2{
+    margin-left: 93%;
+}
+.menuContentP1{
+    margin-top: 15px;
+}
+.menuContentP2{
+    margin-top: 55px;
+}
+.menuContentP3{
+    margin-top: 95px;
+    margin-left: 92.2%;
+}
+p, h1{
+    user-select: none;
+    color: rgba(33, 95, 255, 1);
+    width: bold;
+}
+*{
+    font-family: Nunito;
+    margin-right: 1%;
+}
+.mainH1{
+    font-size: 40px;
+    margin-left: 45%;
+    margin-top: 20px;
+}
+.mainP1{
+    font-size: 25px;
+    margin-top: 0%;
+    z-index: -7;
+}
+.phoneNum,.email{
+    text-decoration: underline;
+    cursor: pointer;
+}
